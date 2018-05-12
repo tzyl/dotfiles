@@ -153,9 +153,9 @@ alias reload="exec ${SHELL} -l"
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
-##########
-# Docker #
-##########
+##################
+# Docker aliases #
+##################
 
 # Get latest container ID
 alias dl="docker ps -l -q"
@@ -183,21 +183,3 @@ alias dki="docker run -i -t -P"
 
 # Execute interactive container, e.g., $dex base /bin/bash
 alias dex="docker exec -i -t"
-
-# Stop all containers
-alias dstop='docker stop $(docker ps -a -q)'
-
-# Remove all containers
-alias drm='docker rm $(docker ps -a -q);'
-
-# Stop and Remove all containers
-alias drmf='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
-
-# Remove all images
-alias dri='docker rmi $(docker images -q)'
-
-# Remove all <none> images
-alias drin='docker rmi -f $(docker images --filter "dangling=true" -q)'
-
-# Show all alias related docker
-alias dalias='alias | grep "docker" | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort'
