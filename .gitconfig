@@ -1,10 +1,19 @@
 [alias]
 
+	a = add
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	plog = log --pretty=oneline -n 20 --graph --abbrev-commit
+
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
-	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+	# l = log --pretty=oneline -n 20 --graph --abbrev-commit
 
 	# View the current working tree status using the short format
-	s = status -s
+	# s = status -s
 
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
@@ -30,7 +39,8 @@
 	remotes = remote -v
 
 	# List aliases
-	aliases = config --get-regexp alias
+	# aliases = config --get-regexp alias
+	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
 
 	# Amend the currently staged files to the latest commit
 	amend = commit --amend --reuse-message=HEAD
@@ -135,7 +145,7 @@
 [commit]
 
 	# https://help.github.com/articles/signing-commits-using-gpg/
-	gpgsign = true
+	# gpgsign = true
 
 [diff]
 

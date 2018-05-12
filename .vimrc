@@ -1,7 +1,7 @@
-" Use the Solarized Dark theme
-set background=dark
-colorscheme solarized
-let g:solarized_termtrans=1
+" Custom stuff
+set splitbelow
+set splitright
+set pastetoggle=<F2>
 
 " Make Vim more useful
 set nocompatible
