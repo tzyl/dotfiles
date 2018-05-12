@@ -7,6 +7,9 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+" Keep indentation on new line
+set autoindent
+
 " Toggle insert mode
 set pastetoggle=<F2>
 
