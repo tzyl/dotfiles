@@ -1,5 +1,21 @@
 #!/usr/bin/env bash
 
+# Follow copied and moved files to destination directory
+cpf() { cp "$@" && goto "$_"; }
+mvf() { mv "$@" && goto "$_"; }
+goto() { [ -d "$1" ] && cd "$1" || cd "$(dirname "$1")"; }
+
+# Clean Python files
+pyclean () {
+        find . -type f -name "*.py[co]" -delete
+        find . -type d -name "__pycache__" -delete
+}
+
+# Change directory to git root
+gitroot() {
+  cd $(git rev-parse --show-toplevel)
+}
+
 # Create a new directory and enter it
 function mkd() {
 	mkdir -p "$@" && cd "$_";
