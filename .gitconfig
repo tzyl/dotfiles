@@ -1,10 +1,13 @@
 [alias]
 
 	a = add
-	co = checkout
 	br = branch
 	ci = commit
+	cl = clone
+	co = checkout
 	d = diff --patch-with-stat
+	pl = pull
+	ph = push
 	st = status
 	unstage = reset HEAD --
 	last = log -1 HEAD
@@ -23,10 +26,10 @@
 	#di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
 
 	# Pull in remote changes for the current repository and all its submodules
-	p = !"git pull; git submodule foreach git pull origin master"
+	#p = !"git pull; git submodule foreach git pull origin master"
 
 	# Clone a repository including all submodules
-	c = clone --recursive
+	#c = clone --recursive
 
 	# Commit all changes
 	ca = !git add -A && git commit -av
