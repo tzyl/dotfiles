@@ -9,6 +9,8 @@ set expandtab
 
 " Keep indentation on new line
 set autoindent
+set smartindent
+set copyindent
 
 " Toggle insert mode
 set pastetoggle=<F2>
