@@ -1,0 +1,98 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  // Subword
+  {
+    "key": "alt+home",
+    "command": "subwordNavigation.cursorSubwordLeft",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+end",
+    "command": "subwordNavigation.cursorSubwordRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+shift+end",
+    "command": "subwordNavigation.cursorSubwordRightSelect"
+  },
+  {
+    "key": "alt+shift+home",
+    "command": "subwordNavigation.cursorSubwordLeftSelect"
+  },
+  {
+    "key": "alt+delete",
+    "command": "subwordNavigation.deleteSubwordLeft",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+shift+delete",
+    "command": "subwordNavigation.deleteSubwordRight",
+    "when": "editorTextFocus"
+  },
+  // Terminal
+  {
+    "key": "ctrl+alt+tab",
+    "command": "workbench.action.terminal.focusNext"
+  },
+  {
+    "key": "ctrl+cmd+x",
+    "command": "workbench.action.terminal.kill"
+  },
+  {
+    "key": "ctrl+cmd+t",
+    "command": "workbench.action.terminal.new"
+  },
+  // Expand region
+  {
+    "key": "cmd+'",
+    "command": "expand_region",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+shift+'",
+    "command": "undo_expand_region",
+    "when": "editorTextFocus && editorHasSelection"
+  },
+  // Remap for spectacle
+  {
+    "key": "ctrl+alt+up",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+down",
+    "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+cmd+up",
+    "command": "workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "ctrl+cmd+down",
+    "command": "workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "alt+cmd+h",
+    "command": "editor.action.startFindReplaceAction"
+  },
+  // Move tab left/right
+  {
+    "key": "cmd+alt+shift+left",
+    "command": "workbench.action.moveEditorLeftInGroup"
+  },
+  {
+    "key": "cmd+alt+shift+right",
+    "command": "workbench.action.moveEditorRightInGroup"
+  },
+  // Terminal toggle foucs
+  {
+    "key": "ctrl+`",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "workbench.action.terminal.focus",
+    "when": "!terminalFocus"
+  },
+]
