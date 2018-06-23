@@ -1,3 +1,6 @@
+" colorscheme
+colorscheme dracula
+
 " Open split panes to right and bottom
 set splitbelow
 set splitright
