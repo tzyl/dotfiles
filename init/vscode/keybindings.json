@@ -3,31 +3,33 @@
   // Subword
   {
     "key": "alt+home",
-    "command": "subwordNavigation.cursorSubwordLeft",
-    "when": "editorTextFocus"
+    "command": "cursorWordPartStartLeft",
+    "when": "textInputFocus"
   },
   {
     "key": "alt+end",
-    "command": "subwordNavigation.cursorSubwordRight",
-    "when": "editorTextFocus"
+    "command": "cursorWordPartRight",
+    "when": "textInputFocus"
   },
   {
     "key": "alt+shift+end",
-    "command": "subwordNavigation.cursorSubwordRightSelect"
+    "command": "cursorWordPartRightSelect",
+    "when": "textInputFocus"
   },
   {
     "key": "alt+shift+home",
-    "command": "subwordNavigation.cursorSubwordLeftSelect"
+    "command": "cursorWordPartStartLeftSelect",
+    "when": "textInputFocus"
   },
   {
     "key": "alt+delete",
-    "command": "subwordNavigation.deleteSubwordLeft",
-    "when": "editorTextFocus"
+    "command": "deleteWordPartLeft",
+    "when": "textInputFocus && !editorReadonly"
   },
   {
     "key": "alt+shift+delete",
-    "command": "subwordNavigation.deleteSubwordRight",
-    "when": "editorTextFocus"
+    "command": "deleteWordPartRight",
+    "when": "textInputFocus && !editorReadonly"
   },
   // Terminal
   {
@@ -94,5 +96,6 @@
     "key": "ctrl+`",
     "command": "workbench.action.terminal.focus",
     "when": "!terminalFocus"
-  },
+  }
 ]
+
