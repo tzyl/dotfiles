@@ -11,9 +11,7 @@ set shiftwidth=2
 set expandtab
 
 " Keep indentation on new line
-set autoindent
-set smartindent
-set copyindent
+filetype plugin indent on
 
 " Toggle insert mode
 set pastetoggle=<F2>
