@@ -1,27 +1,35 @@
 {
-  "editor.tabSize": 2,
-  "window.zoomLevel": 0,
-  "workbench.editor.enablePreview": false,
-  // "workbench.editor.enablePreviewFromQuickOpen": false,
-  "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true,
-  "workbench.statusBar.visible": true,
-  "editor.snippetSuggestions": "top",
-  // stylelint
-  "stylelint.enable": true,
-  "css.validate": false,
-  "scss.validate": false,
-  "[python]": {
-    "editor.tabSize": 4
-  },
-  "[typescript]": {
-    "editor.tabSize": 4
-  },
-  "[typescriptreact]": {
-    "editor.tabSize": 4
-  },
-  // Python extension
-  "python.linting.pylintEnabled": true,
-  "python.linting.flake8Enabled": true,
-  "java.errors.incompleteClasspath.severity": "ignore",
+    "editor.tabSize": 2,
+    "window.zoomLevel": 0,
+    "workbench.editor.enablePreview": false,
+    // "workbench.editor.enablePreviewFromQuickOpen": false,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "workbench.statusBar.visible": true,
+    "editor.snippetSuggestions": "top",
+    // tslint
+    "tslint.autoFixOnSave": true,
+    // stylelint
+    "stylelint.enable": true,
+    "css.validate": false,
+    "scss.validate": false,
+    "[python]": {
+      "editor.tabSize": 4
+    },
+    "[scss]": {
+      "editor.tabSize": 4
+    },
+    "[typescript]": {
+      "editor.tabSize": 4
+    },
+    "[typescriptreact]": {
+      "editor.tabSize": 4
+    },
+    "stylelint.configOverrides": {
+      "ignoreFiles": "**/*.(ts|tsx)"
+    },
+    // Python extension
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "java.errors.incompleteClasspath.severity": "ignore",
 }
