@@ -1,0 +1,6 @@
+[
+    { "keys": ["command+shift+up"], "command": "swap_line_up" },
+    { "keys": ["command+shift+down"], "command": "swap_line_down" },
+    { "keys": ["ctrl+super+up"], "command": "select_lines", "args": {"forward": false} },
+    { "keys": ["ctrl+super+down"], "command": "select_lines", "args": {"forward": true} },
+]

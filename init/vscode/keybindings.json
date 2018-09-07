@@ -57,21 +57,21 @@
   },
   // Remap for spectacle
   {
-    "key": "ctrl+alt+up",
+    "key": "ctrl+cmd+up",
     "command": "editor.action.insertCursorAbove",
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+alt+down",
+    "key": "ctrl+cmd+down",
     "command": "editor.action.insertCursorBelow",
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+cmd+up",
+    "key": "ctrl+alt+up",
     "command": "workbench.action.moveEditorToPreviousGroup"
   },
   {
-    "key": "ctrl+cmd+down",
+    "key": "ctrl+alt+down",
     "command": "workbench.action.moveEditorToNextGroup"
   },
   {
@@ -98,4 +98,3 @@
     "when": "!terminalFocus"
   }
 ]
-
