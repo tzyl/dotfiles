@@ -1,0 +1,5 @@
+ExpandRegion
+MarkdownLivePreview
+Materialize
+Package Control
+SideBarEnhancements

@@ -1,6 +1,13 @@
 [
-    { "keys": ["command+shift+up"], "command": "swap_line_up" },
-    { "keys": ["command+shift+down"], "command": "swap_line_down" },
+    // swap lines
+    { "keys": ["alt+up"], "command": "swap_line_up" },
+    { "keys": ["alt+down"], "command": "swap_line_down" },
+    // add caret
     { "keys": ["ctrl+super+up"], "command": "select_lines", "args": {"forward": false} },
     { "keys": ["ctrl+super+down"], "command": "select_lines", "args": {"forward": true} },
+    // delete line
+    { "keys": ["super+shift+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+    // expand region
+    { "keys": ["super+'"], "command": "expand_region" },
 ]
+
