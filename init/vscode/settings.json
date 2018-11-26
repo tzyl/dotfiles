@@ -3,6 +3,7 @@
     "window.zoomLevel": 0,
     "workbench.editor.enablePreview": false,
     // "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.highlightModifiedTabs": true,
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "workbench.statusBar.visible": true,
