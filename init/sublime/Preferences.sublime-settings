@@ -6,18 +6,9 @@
 	"caret_extra_width": 2,
 	"caret_style": "phase",
 	"color_scheme": "Packages/Materialize/schemes/Material Brogrammer.tmTheme",
-	"ensure_newline_at_eof_on_save": true,
-	"font_size": 11,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"overlay_scroll_bars": "false",
-	"theme": "Material Brogrammer.sublime-theme",
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
+	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
 		".DS_Store",
@@ -28,6 +19,15 @@
 		".Spotlight-V100",
 		".Trashes"
 	],
+	"font_size": 11,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"overlay_scroll_bars": "false",
 	"show_encoding": true,
 	"show_line_endings": true,
+	"theme": "Material Brogrammer.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
 }
