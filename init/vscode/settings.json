@@ -29,4 +29,8 @@
     "java.errors.incompleteClasspath.severity": "ignore",
     "breadcrumbs.enabled": true,
     "editor.gotoLocation.multiple": "gotoAndPeek",
+    "typescript.preferences.quoteStyle": "double",
+    "javascript.preferences.quoteStyle": "double",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.renderWhitespace": "selection",
 }
